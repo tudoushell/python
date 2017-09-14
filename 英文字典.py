@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 #  英文字典.py
+#  Copyright 2017 sunshine <sunshine@K>
 english_dictionary={ 
 	'position':"位置",
 	'chaos':"混乱",
