@@ -20,9 +20,13 @@ from django.urls import (path,include)
 urlpatterns = [
     #admin loagin page
     path('admin/', admin.site.urls),
+    
     #home page
     path('',include('learning_logs.learn_urls')),
+    
     #user page
     path('users/',include('users.users_urls')),
+
+    
 
 ]

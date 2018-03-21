@@ -9,4 +9,7 @@ urlpatterns = [
     
     #logout page
     path('logout/',views.logout_view,name='logout'),
+
+    #registered page
+    path('register/',views.register,name='register'),
 ]
