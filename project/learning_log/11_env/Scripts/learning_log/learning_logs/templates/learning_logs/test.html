@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>this is a html test</title>
@@ -45,12 +46,88 @@
             <ul>
                 <p>好看的图片</p>
                 <img src="http://image.3001.net/images/20180331/15224984443165.jpg" alt="安全">
-                
+                <p>我不会缩进但会用& nbsp&nbsp;hahahahahah</p>
+                <p><img src="http://image.3001.net/images/20180331/15224984443165.jpg" alt="google"></p>
             </ul>
-            
         </div>
-        
+        <div id="two pictures">
+            <ul>
+                <h3></h3>
+                <li><p>图片</p><img src="http://image.3001.net/images/20180331/15224984443165.jpg" alt="hah"></li>
+            </ul>
+        </div>
+        <!--4行3列表格  -->
+        <div id="table">
+            <h2>到最后了</h2>
+            <h3>表格来了</h3>
+            <table border="1">
+                <tr>
+                        <td>标题1</td>
+                        <td>标题2</td>
+                        <td>标题3</td>
+                </tr>
+                <tr>
+                        <td>hahahahahahah</td>
+                        <td>hahahahahahaah</td>
+                        <td><a href="https://www.google.com">google</a></td>
+                </tr>
+                <tr>
+                        <td>asdfsadf</td>
+                        <td>asdfsafsad</td>
+                        <td>asdfsafsaf</td>
+                </tr>
+                <tr>
+                        <td>快要结束了</td>
+                        <td colspan="2">yes,it is over!</td>
+                </tr>
+            </table>
+        </div>
+        <!-- 各种输入框-->
+        <div id="input">
+            <h2>输入框来了</h2>
+            <ul>
+                    <label for="eamil">请输入邮箱地址：</label>
+                    <input type="text" placeholder="请输入邮箱地址" id="eamil">
+                    <p>请按邮箱地址正确的去输入</p>
+                    <label for="email_passwd">请输入邮箱密码：</label>
+                    <input type="password" placeholder="输入密码" id="email_passwd">
+                    <label for="repeat_passwd">请再次输入邮箱密码：</label>
 
+                    <input type="password" id="repeat_passwd">
+                    <p>password is six or sixteen</p>
+            </ul>
+        </div>
 
+        <!-- 表单-->
+        <div>
+            <form action="">
+               <label >性别：</label>
+               <label for="man">男</label>
+               <input type="radio" id="man" name="sexs">
+                <label for="woman">女</label>
+                <input type="radio" id="woman" name="sexs">
+                <label for="city">城市：</label>
+                <!--多选框-->
+                <select name="city">
+                    <option value="北京">北京</option>
+                    <option value="南京">南京</option>
+                    <option value="上海" selected>上海</option>
+                </select>
+                <!-- checkbox-->
+                <label id="hobby">爱好：</label>
+                <label for="runs">跑步</label>
+                <input type="checkbox" name="run" id="runs">
+                <label for="swims">游泳</label>
+                <input type="checkbox" name="swim" id="swims">
+                <label for="fishes">钓鱼</label>
+                <input type="checkbox" name="fish" id="fishes">
+                <!-- textarea标签-->
+                <label for="information">个人描述:</label>
+                <textarea rows="2" cols="40" placeholder="多行个人信息描述" id="information"></textarea>
+                <input type="submit" value="提交">
+
+            </form>
+        </div>
+        <footer>版权所有@zero</footer>
     </body>
 </html>
