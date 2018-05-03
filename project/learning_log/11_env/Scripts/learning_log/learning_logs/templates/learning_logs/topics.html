@@ -1,7 +1,9 @@
 {% extends "learning_logs/base.html" %}
-
+{% load bootstrap3 %}
+{% block header %}
+<h2>Topics</h2>
+{% endblock header %}
 {% block content %}
-    <p>Topics</p>
     <ul>
         {% for topic in topics %}
           <li>

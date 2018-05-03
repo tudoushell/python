@@ -1,13 +1,15 @@
 {% extends 'learning_logs/base.html' %}
-
+{% load bootstrap3 %}
 {% block header %}
 <h2>{{ topic }}</h2>
 {% endblock header %}
 
 {% block content %}
-     <p>
-        <a href="{% url 'learning_logs:new_entry' topic.id %}">add new entry</a>
-     </p>
+    <form method="GET" action="{% url 'learning_logs:new_entry' topic.id %}">
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">add new entry</button>
+    {% endbuttons %}
+    </form>
     <u1>
     {% for entry in entries %}
      <div class="panel panel-default">
@@ -25,6 +27,7 @@
             {{ entry.text|linebreaks }}
          </div>
      </div><!-- panel-->
+     
     {% empty %}
           There are no entries for this topic yet.
     {% endfor %}
